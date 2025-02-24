@@ -1,4 +1,4 @@
-// Aguarde o DOM carregar antes de adicionar eventos
+
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("formPaciente")?.addEventListener("submit", cadastrarPaciente);
     document.getElementById("formVacina")?.addEventListener("submit", cadastrarVacina);
@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btnExcluir").addEventListener("click", excluirPaciente);
 });
 
-// Função para carregar pacientes e exibir na tabela
 function loadPacientes() {
-    fetch("http://localhost:3000/pacientes") // Altere para a sua API
+    fetch("http://localhost:3000/pacientes") 
         .then(response => response.json())
         .then(pacientes => {
             const tabela = document.querySelector("#pacientes-table tbody");
@@ -56,7 +55,6 @@ function loadPacientes() {
         .catch(error => console.error("Erro ao carregar pacientes:", error));
 }
 
-// Função para cadastrar paciente
 function cadastrarPaciente() {
     const nome = document.getElementById("nome").value;
     const cpf = document.getElementById("cpf").value;
@@ -77,7 +75,6 @@ function cadastrarPaciente() {
     .catch(error => console.error("Erro ao cadastrar paciente:", error));
 }
 
-// Função para preencher o formulário ao editar
 function preencherFormulario(id) {
     fetch(`http://localhost:3000/pacientes/${id}`)
         .then(response => response.json())
@@ -88,7 +85,7 @@ function preencherFormulario(id) {
             document.getElementById("sexo").value = paciente.sexo;
             document.getElementById("data_nascimento").value = paciente.data_nascimento;
 
-            // Mostrar botões de edição e exclusão
+
             document.getElementById("btnCadastrar").style.display = "none";
             document.getElementById("btnEditar").style.display = "inline-block";
             document.getElementById("btnExcluir").style.display = "inline-block";
@@ -96,7 +93,6 @@ function preencherFormulario(id) {
         .catch(error => console.error("Erro ao carregar paciente para edição:", error));
 }
 
-// Função para salvar a edição
 function salvarEdicao() {
     const id = document.getElementById("pacienteId").value;
     const nome = document.getElementById("nome").value;
@@ -118,7 +114,6 @@ function salvarEdicao() {
     .catch(error => console.error("Erro ao editar paciente:", error));
 }
 
-// Função para excluir paciente
 function excluirPaciente() {
     const id = document.getElementById("pacienteId").value;
 
@@ -135,7 +130,6 @@ function excluirPaciente() {
     }
 }
 
-// Função para resetar o formulário
 function resetFormulario() {
     document.getElementById("formPaciente").reset();
     document.getElementById("pacienteId").value = "";
@@ -145,8 +139,6 @@ function resetFormulario() {
     document.getElementById("btnExcluir").style.display = "none";
 }
 
-
-// Função genérica para envio de dados à API
 async function enviarDadosAPI(url, dados, sucessoMsg) {
     try {
         const response = await fetch(url, {
@@ -166,8 +158,6 @@ async function enviarDadosAPI(url, dados, sucessoMsg) {
     }
 }
 
-
-// Função para cadastrar vacina
 async function cadastrarVacina(event) {
     event.preventDefault();
     const vacina = getFormValues("formVacina");
@@ -175,8 +165,6 @@ async function cadastrarVacina(event) {
     await enviarDadosAPI("/vacina/cadastrar", vacina, "Vacina cadastrada com sucesso!");
 }
 
-
-// Consultar vacinas
 async function consultarVacinas() {
     try {
         const idPaciente = document.getElementById("paciente-id").value;
