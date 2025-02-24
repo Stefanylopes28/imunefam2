@@ -63,14 +63,12 @@
     </section>
     
 
-    <!-- Consulta de Vacinas -->
     <section>
         <h2>Consulta de Vacinas</h2>
         <button id="consultarVacinas">Consultar Vacinas</button>
         <ul id="listaVacinas"></ul>
     </section>
 
-    <!-- Gerenciamento de Vacinas e Pacientes -->
     <section>
         <h2>Lista de Pacientes</h2>
         <button onclick="loadPacientes()">Carregar Pacientes</button>
@@ -85,18 +83,16 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Dados de pacientes serão carregados aqui -->
+            
             </tbody>
         </table>
     </section>
 
-    <!-- Consultar Todos Pacientes -->
     <section>
         <button onclick="consultarTodosPacientes()">Consultar Todos Pacientes</button>
         <div id="pacientes-lista"></div>
     </section>
 
-    <!-- Filtro para Imunizações -->
     <form id="filtroImunizacao">
         <label for="idPaciente">ID do Paciente:</label>
         <input type="text" id="idPaciente" name="idPaciente">
@@ -107,7 +103,6 @@
         <button type="button" onclick="consultarImunizacoesPorIntervalo()">Consultar Imunizações</button>
     </form>
 
-    <!-- Consultar Vacinas Aplicadas -->
     <div>
         <label for="paciente-id">ID do Paciente:</label>
         <input type="number" id="paciente-id" name="paciente-id">
@@ -115,7 +110,6 @@
     </div>
     <div id="resultado-vacinas-aplicadas"></div>
 
-    <!-- Consultar Vacinas Aplicáveis no Próximo Mês -->
     <div>
         <label for="paciente-id">ID do Paciente:</label>
         <input type="number" id="paciente-id" name="paciente-id">
@@ -123,7 +117,6 @@
     </div>
     <div id="resultado-vacinas-proximas"></div>
 
-    <!-- Consultar Vacinas Atrasadas -->
     <div>
         <label for="paciente-id">ID do Paciente:</label>
         <input type="number" id="paciente-id" name="paciente-id">
@@ -131,7 +124,6 @@
     </div>
     <div id="resultado-vacinas-atrasadas"></div>
 
-    <!-- Consultar Vacinas Acima da Idade -->
     <div>
         <label for="meses">Idade em Meses:</label>
         <input type="number" id="meses" name="meses">
