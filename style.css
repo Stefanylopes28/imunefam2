@@ -1,0 +1,151 @@
+/* Definições para o Corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Seções */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Formulários */
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+/* Labels do formulário */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Estilo para campos de entrada */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+/* Ajuste nos campos com ID */
+#consultar-vacinas input {
+    margin: 10px 0 20px;  /* Distância extra se necessário */
+}
+
+/* Estilo para Botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button1 {
+    color: black;
+    background-color: yellow;
+}
+
+.button2 {
+
+    background-color: red;;
+}
+
+.button3 {
+    color: black;
+    background-color: yellow;
+}
+
+.button4 {
+background-color: red;
+}
+/* Estilo para Divs */
+div {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Resultados das consultas */
+#resultado-vacinas-aplicadas,
+#resultado-vacinas-proximas,
+#resultado-vacinas-atrasadas,
+#resultado-vacinas-acima-idade {
+    margin-top: 20px;
+}
+
+#resultado-vacinas-aplicadas div,
+#resultado-vacinas-proximas div,
+#resultado-vacinas-atrasadas div,
+#resultado-vacinas-acima-idade div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Estilo para Listas */
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilo para Itens de Pacientes */
+.paciente-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+#pacientes-lista {
+    margin-top: 10px;
+}
