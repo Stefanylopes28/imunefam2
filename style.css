@@ -1,4 +1,4 @@
-/* Definições para o Corpo */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
 header {
     background-color: #4CAF50;
     color: white;
@@ -14,13 +13,11 @@ header {
     padding: 20px;
 }
 
-/* Títulos */
 h1, h2 {
     color: #333;
     text-align: center;
 }
 
-/* Seções */
 section {
     margin: 20px;
     padding: 20px;
@@ -28,14 +25,12 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Container principal */
 .container {
     width: 80%;
     margin: auto;
     padding: 10px;
 }
 
-/* Formulários */
 form {
     margin: 20px;
     padding: 20px;
@@ -45,29 +40,25 @@ form {
     box-sizing: border-box; /* Garante que o padding não afete a largura */
 }
 
-/* Labels do formulário */
 form label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
 }
 
-/* Estilo para campos de entrada */
 input, select, textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Garante que o padding não afete a largura */
+    box-sizing: border-box; 
 }
 
-/* Ajuste nos campos com ID */
 #consultar-vacinas input {
-    margin: 10px 0 20px;  /* Distância extra se necessário */
+    margin: 10px 0 20px; 
 }
 
-/* Estilo para Botões */
 button {
     background-color: #4CAF50;
     color: white;
@@ -97,7 +88,7 @@ button {
 .button4 {
 background-color: red;
 }
-/* Estilo para Divs */
+
 div {
     margin: 20px 0;
     padding: 15px;
@@ -107,7 +98,6 @@ div {
     box-sizing: border-box;
 }
 
-/* Resultados das consultas */
 #resultado-vacinas-aplicadas,
 #resultado-vacinas-proximas,
 #resultado-vacinas-atrasadas,
@@ -126,7 +116,7 @@ div {
     border-radius: 5px;
 }
 
-/* Estilo para Listas */
+
 ul {
     list-style-type: none;
     padding: 10px;
@@ -139,7 +129,6 @@ li {
     border-radius: 5px;
 }
 
-/* Estilo para Itens de Pacientes */
 .paciente-item {
     padding: 10px;
     border: 1px solid #ddd;
